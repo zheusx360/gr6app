@@ -1,0 +1,63 @@
+{
+   "Transparent": "transparent",
+   "Translucid":"#fff00",
+   "BlueBaby": "#8fe9fc",
+   "Grey11": "#1C1C1C",
+   "Grey21": "#363636",
+   "Grey31": "#4F4F4F",
+   "DimGray": "#696969",
+   "Gray": "#808080",
+   "DarkGray": "#A9A9A9",
+   "Silver": "#C0C0C0",
+   "LightGrey": "#D3D3D3",
+   "Gainsboro": "#DCDCDC",
+   "Light": "#EFEFEF",
+
+   "White":"#ffff",
+   "Black":"#000",
+
+   "GrayGlas": "#fff",
+
+   "DarkViolet":"#18021c",
+   "DarkViolet2":"#20053f",
+   "MediumViolet":"#2c0734",
+   "Violet":"#724586",
+   "LightViolet":"#c4a9d2",
+   "MediumSlateBlue": "#7B68EE",
+   "Violet31":"#490098",
+   "Violet21":"#6A00D2",
+   "Violet11":"#8F4CF1",
+   "Violet15": "#9360d7",
+
+   "Buttom": "#824AD1",
+   "ButtomDisabled": "#ddcef2",
+
+   "MediumVioletRed": "#C71585",
+   "DeepPink": "#FF1493",
+   "HotPink": "#FF69B4",
+   "PaleVioletRed": "#DB7093",
+   "LightPink": "#FFB6C1",
+
+   "DarkBlue":"#172d4e",
+   "MediumBlue":"#082b5d",
+   "DodgerBlue": "#1E90FF",
+   "DeepSkyBlue": "#00BFFF",
+   "LightSkyBlue": "#87CEFA",
+   "Blue":"#74b9df",
+   "LightBlue":"#64add9",
+   "Blue-21": "#2A0161",
+
+   "Aqua/Cyan": "#00FFFF",
+   "DarkTurquoise": "#00CED1",
+   "Turquoise": "#40E0D0",
+
+   "DarkRed": "#8B0000",
+   "Danger":"#D14343",
+   "OrangeRed": "#FF4500",
+   "Success":"#00A925",
+   "LimeGreen": "#32CD32",
+   "Lime": "#00FF00",
+   "DarkOrange": "#FF8C00",
+   "LightOrange": "#ebae4c",
+   "Alert":"#FFA500"
+}
