@@ -10,9 +10,9 @@ import {useRegister} from '@modules/auth/hooks/useRegister';
 
 import {useState} from 'react';
 
-import {View, KeyboardAvoidingView} from 'react-native';
+import {View, KeyboardAvoidingView, Dimensions} from 'react-native';
 import LottieView from 'lottie-react-native';
-import {Logo} from '@assets/lottie';
+import {Logo, LogoGr6} from '@assets/lottie';
 
 export function RegisterScreen() {
   const [email, setEmail] = useState('');
@@ -23,6 +23,7 @@ export function RegisterScreen() {
   const {navigate} = useNavigation<AppNavigatorRoutesProps>();
 
   const {Register, loading} = useRegister();
+  const {height} = Dimensions.get('screen');
 
   return (
     <>
@@ -38,13 +39,18 @@ export function RegisterScreen() {
           behavior="padding"
           style={{
             width: '100%',
+            height: height,
             alignItems: 'center',
           }}>
-          {/* <Image source={Logo} className="w-64 h-24 mb-16" resizeMode="stretch" /> */}
-          <View className="w-64 h-24 mb-10">
-            <LottieView style={{flex: 1}} autoPlay loop={false} source={Logo} />
+          <View className="w-80 h-60">
+            <LottieView
+              style={{flex: 1}}
+              autoPlay
+              loop={false}
+              source={LogoGr6}
+            />
           </View>
-          <CardLogin custom="h-[44%]">
+          <CardLogin custom="min-h-[30%]">
             <InputFields
               label="Nome"
               name="user-circle"
@@ -60,7 +66,7 @@ export function RegisterScreen() {
           </CardLogin>
           <Buttom
             title="REGISTRAR"
-            custom="mt-6 mb-10"
+            custom="mt-10"
             isLoading={loading}
             disabled={
               !(password.length > 5 && email.length > 2 && name.length > 1)

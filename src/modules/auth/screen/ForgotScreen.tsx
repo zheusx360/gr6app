@@ -22,7 +22,7 @@ export function ForgotScreen() {
   const [password, setPassword] = useState('');
   const [contador, setContador] = useState<number>(0);
   const styleView =
-    'bg-black/40 border-2 border-orange-300/10 px-8 py-11 justify-center items-center w-[94%] rounded-lg';
+    'bg-black/50 border-2 border-orange-300/10 px-8 py-11 justify-center items-center w-[94%] rounded-lg';
 
   const {
     sendEmail,
