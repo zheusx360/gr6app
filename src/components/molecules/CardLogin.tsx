@@ -13,7 +13,7 @@ export const CardLogin = ({children, custom}: Props) => {
       <View className="w-full h-full">
         <LinearGradient
           className="flex-1 rounded-3xl items-center justify-center p-[7%] border border-orange-400/50"
-          colors={['rgba(169, 105, 31, 0.522)', 'rgba(111, 74, 10, 0.464)']}
+          colors={['rgba(40, 40, 40, 0.522)', 'rgba(20, 20, 20, 0.500)']}
           start={{x: 0, y: 1}}
           end={{x: 0, y: 1}}
           useAngle

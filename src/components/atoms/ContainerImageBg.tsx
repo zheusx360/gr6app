@@ -27,7 +27,7 @@ export function ContainerImageBg({
   const {width, height} = Dimensions.get('screen');
 
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1" edges={['top', 'left', 'right']}>
       <ImageBackground
         source={imageBg}
         resizeMode="cover"

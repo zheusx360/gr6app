@@ -1,7 +1,7 @@
 import {Icons, IconsType} from '@components/atoms/Icons';
 import {Text} from '@components/atoms/Text';
 import React, {useEffect, useState} from 'react';
-import {BackHandler, TouchableOpacity, View} from 'react-native';
+import {BackHandler, Platform, TouchableOpacity, View} from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import {CustomModal} from './CustomModal';
 import {useAuth} from '@modules/auth/hooks/useAuth';
@@ -75,7 +75,9 @@ export function Header({
   return (
     <>
       <View
-        className={`w-full h-12 flex-row bg-Transparent mt-8 items-center top-2 justify-center ${custom}`}>
+        className={`w-full h-12 flex-row bg-Transparent ${
+          Platform.OS === 'ios' ? '' : 'mt-3'
+        } items-center top-2 justify-center ${custom}`}>
         <TouchableOpacity
           className="absolute -left-5 w-8 h-8 rounded-full justify-center items-center"
           onPress={goBackEvent}>

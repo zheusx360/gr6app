@@ -14,7 +14,7 @@ export type ForgotProps = {
  export function  useEmail(){
     
    const [userId, setUserId] = useState('');
-   const [numberPage, setNumberPage] = useState(2)
+   const [numberPage, setNumberPage] = useState(0)
    const [loading, setLoading]= useState(false)
    const {reset, navigate} = useNavigation<AppNavigatorRoutesProps>();
     
